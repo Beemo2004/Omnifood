@@ -6,30 +6,77 @@
 html{
     font-size: 62.5%;
 }
-nav{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    padding: 0.5rem;
-    overflow: auto;
-}
-a{
+nav a{
     text-decoration: none;
-    color: black;
-}
-nav a:hover,a:focus{
-    background-color: lightgray;
-    font-weight: bold;
-    border-radius: 0.3em;
+    color: white;
+    font-family: sans-serif;
 }
 
-.links{
+nav{
     display: flex;
-    gap: 1.5em;
+    justify-content: space-around;
 }
-.sign-in{
-    background-color: orange;
+nav a:hover , a:focus{
+    text-decoration: 1.8px underline #e67e22;
+    background-color: transparent;
+}
+
+.container{
+    background-image:url("../img/gallery/gallery-7.jpg");
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.home{
+    display: grid;
+    background-color: rgba(202, 202, 202, 0.822) ;
+    width:95vw ;
+    height: 83vh ;
+    border-radius: 1em;
+}
+.home-img{
+    width: 40vw;
+    height: 45vh;
+    margin-top: 2em;
+    background-image: url("../img/gallery/gallery-3.jpg");
+    background-size:contain;
+}
+.home-info{
+    margin:2em 2em 0 0;
+    float: right;
+
+}
+.more-info{
+    margin-right: 2em;
+    display: flex;
+    gap: 2.5em;
+    float: right;
+}
+.branding a{
+    text-decoration: none;
     color: white;
-    font-weight: bold;
-    border-radius: 0.3em;
+    font-weight: bolder;
+}
+.learn-more{
+    background-color: black;
+    border-radius: 0.2em;
+    padding: 0.4em;
+}
+.subscription{
+    background-color:#e67e22;
+    border-radius: 0.2em;
+    padding: 0.4em;
+}
+.branding a:hover, a:focus{
+    background-color: lightgray;
+}
+.partners{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-weight: bolder;
+    font: italic;
 }
